@@ -58,8 +58,6 @@ jobs:
         echo "src-git danshui https://github.com/281677160/openwrt-package" >> ./feeds.conf.default
         echo "src-git helloworld https://github.com/fw876/helloworld" >> ./feeds.conf.default
         echo "src-git passwall https://github.com/xiaorouji/openwrt-passwall" >> ./feeds.conf.default
-        echo "rc-git passwall1 https://github.com/xiaorouji/openwrt-passwall" >> ./feeds.conf.default
-        echo "rc-git src-git passwall2 https://github.com/xiaorouji/openwrt-passwall2" >> ./feeds.conf.default
         ./scripts/feeds update -a
         ./scripts/feeds install -a
         cp -f $GITHUB_WORKSPACE/.config $GITHUB_WORKSPACE/openwrt/
