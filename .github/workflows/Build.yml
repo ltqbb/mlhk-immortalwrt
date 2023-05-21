@@ -65,7 +65,7 @@ jobs:
     - name: 修改 Lan IP
       run: |
         cd openwrt
-        sed -i 's/192.168.100.1/192.168.2.1/g' package/base-files/files/bin/config_generate
+        sed -i 's/192.168.1.1/192.168.100.1/g' package/base-files/files/bin/config_generate
         neofetch
 
     - name: 加入 files
@@ -106,4 +106,4 @@ jobs:
         body: |
           # 未测试×
           
-          # IP: 192.168.100.1 | Password: none
+         IP: 192.168.1.1 | Password: none
