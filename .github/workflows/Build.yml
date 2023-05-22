@@ -70,7 +70,7 @@ jobs:
         
      - name: 加入 files
        run: |
-          [ -e files ] && mv files openwrt/files
+         [ -e files ] && mv files openwrt/files
 
     - name: 下载依赖
       run: |
